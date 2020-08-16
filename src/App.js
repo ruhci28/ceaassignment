@@ -24,6 +24,7 @@ class App extends React.Component{
      totalProducts:0
    };
  }
+ // this function increses the quantity of given product by 1
   increase(index) {
     this.setState((state) => {
       let value = state.products;
@@ -34,6 +35,7 @@ class App extends React.Component{
       };
     });
   }
+  // this function decreses the quantity of given product by 1
    decrease(index) {
      if(this.state.products[index]!== 0){
        this.setState((state) => {
@@ -48,6 +50,7 @@ class App extends React.Component{
        console.log("already zero elements");
      }
   }
+  // this function will delete the selected product and remove it from the view
    deleteNote(id) {
      this.setState((state) => {
        let value = state.products;

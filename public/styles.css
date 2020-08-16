@@ -1,8 +1,10 @@
+/* for quantity label */
 .quantity{
   width: 50px;
   text-align:center;
   margin: 1%;
 }
+/* for buttons */
 .btns{
   margin: 1%;
 }
